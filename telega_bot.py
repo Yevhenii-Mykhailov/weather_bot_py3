@@ -15,7 +15,6 @@ def send_echo(message):
     w = observation.weather
     temperature = w.temperature('celsius')['temp']
     wind = w.wind()
-    # "℃"
 
     answer = "Температура в " + message.text + ": " + str(temperature) + "℃" + "\n"
     answer += "Ветер: " + str(wind) + "\n"
